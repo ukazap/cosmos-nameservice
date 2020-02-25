@@ -18,17 +18,19 @@ const (
 
 var (
 	// functions aliases
-	NewKeeper           = keeper.NewKeeper
-	NewQuerier          = keeper.NewQuerier
-	RegisterCodec       = types.RegisterCodec
-	NewGenesisState     = types.NewGenesisState
-	DefaultGenesisState = types.DefaultGenesisState
-	ValidateGenesis     = types.ValidateGenesis
-	// TODO: Fill out function aliases
+    NewKeeper           = keeper.NewKeeper
+    NewQuerier          = keeper.NewQuerier
+    RegisterCodec       = types.RegisterCodec
+    NewGenesisState     = types.NewGenesisState
+    DefaultGenesisState = types.DefaultGenesisState
+    ValidateGenesis     = types.ValidateGenesis
+	NewMsgBuyName       = types.NewMsgBuyName
+    NewMsgSetName       = types.NewMsgSetName
+    NewMsgDeleteName    = types.NewMsgDeleteName
+    NewWhois            = types.NewWhois
 
 	// variable aliases
-	ModuleCdc     = types.ModuleCdc
-	// TODO: Fill out variable aliases
+    ModuleCdc           = types.ModuleCdc
 )
 
 type (
@@ -36,5 +38,10 @@ type (
 	GenesisState = types.GenesisState
 	Params       = types.Params
 
-	// TODO: Fill out module types
+	MsgSetName      = types.MsgSetName
+    MsgBuyName      = types.MsgBuyName
+    MsgDeleteName   = types.MsgDeleteName
+    QueryResResolve = types.QueryResResolve
+    QueryResNames   = types.QueryResNames
+    Whois           = types.Whois
 )
